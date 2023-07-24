@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* 
+***--------- ATRIBUTOS GENERALES
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+
+/* 
+***--------- HEADER
+*/
+
+header{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+}
+
+nav ul li{
+    display: inline;
+    margin: 20px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(76, 119, 218);
+    font-family: Montserrat, 'sans-serif';
+    font-size: 1.3rem;
+    transition: all .3s;
+}
+
+nav ul li a:hover{
+    color: #dbdbdb;
+}
+
+.header__logo img{
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+/* 
+***--------- FOOTER
+*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #f1f1f1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .footer-logo img {
+    margin-top: 1em;
+    position: relative;
+    bottom: 2rem;
+    border-radius: 100%;
+    background-color: #fff;
+  }
+  
+  footer p {
+    text-align: center;
+    color: #c1c2ca;
+  }
+  
+  /* TERMS FOOTER */
+  
+  .footer-terms {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-terms a {
+    margin: 0 20px;
+    text-align: center;
+    color: #c1c2ca;
+  }
+  
+  .footer-terms a:hover {
+    color: #fff;
+  }
+
+

@@ -1,0 +1,123 @@
+body{
+    background: wheat;
+/* background: linear-gradient(42deg, rgba(145,145,145,1) 0%, rgba(226,226,226,1) 39%, rgba(244,244,244,1) 68%, rgba(144,144,144,1) 100%); */
+}
+
+.cont {
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+
+form{
+    font-family: 'Cascadia Code PL', 'sans-serif';
+    background-color: #f1f1f1;
+    color: #121212;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem 4rem;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0px 15px #1515157b;
+}
+
+.form__title{
+    text-transform: uppercase;
+    background-color: #1942ca;
+    color: #f1f1f1;
+    padding: 0 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: Poppins, 'sans-serif';
+    position: relative;
+    right: 5rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.form__container{
+    display: grid;
+    gap: 1rem;
+}
+
+.form__group{
+    position: relative;
+    --color: #2323239a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+.form__input{
+    width: 100%;
+    background: none;
+    color: #171717;
+    padding: .5rem .3rem;
+    outline: none;
+    border: none;
+    font-family: Poppins, sans-serif;
+    border-bottom: 1px solid var(--color);
+    font-size: 1rem;
+}
+
+.form__input + .form__label{
+    transform: translateY(-18px);
+    transform-origin: left top;
+    color: #1942ca;
+}
+
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+/* Radio Sections */
+
+.form__radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__radio__types{
+    margin-left: 1rem;
+    margin-top: .5rem;
+    position: relative;
+    right: 25%;
+}
+
+.form__label__radio{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-18px);
+    transform-origin: left top;
+    color: #1942ca;    
+}
+
+
+.form__btn{
+    background-color: #1942ca;
+    color: #f1f1ff;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    padding: .6rem 18%;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1px;
+    border-bottom: 3px solid #091c58;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form__btn:hover{
+    background-color: #5a76d4;
+}

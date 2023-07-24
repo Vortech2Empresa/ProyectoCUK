@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jueces</title>
+        <!-- Connections -->
+    <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Agregar Menu Sidebar -->
+
+    <!-- Contenedor -->
+    <div class="container">
+
+        <div class="informacion">
+            <div class="info__div1">
+                <h3 class="info__text"><i class="fa-solid fa-user-ninja"></i> Competidor: <span class="variable">John Dee</span></h3>
+                <h3 class="info__text"><i class="fa-solid fa-calendar-days"></i> Categoria: <span class="variable">2004-05</span></h3>
+                <h3 class="info__text"><i class="fa-solid fa-person-skating"></i> Kata: <span class="variable">Gojushiho Dai</span></h3>
+            </div>
+            <div class="info__div2">
+                <h3 class="info__text"><span class="variable">1er</span> :N° Juez <i class="fa-solid fa-gavel"></i></h3>
+                <h3 class="info__text"><span class="variable">7.3</span> :Voto Anterior <i class="fa-solid fa-check-to-slot"></i></h3>
+                <h3 class="info__text"><span class="variable">Cuartos</span> :Fase <i class="fa-solid fa-trophy"></i></h3>
+            </div>
+        </div>
+
+        <div class="voto">
+            <div class="texto">
+                <h2 class="voto__title">Votacion <span>Kata</span></h2>
+                <p class="voto__text">Recuerda que si quieres <b>Descalificar</b> a un competidor debes clickear el boton "Descalificar", los votos son de 5.0 a 10.0 y no puedes cambiar el voto una vez lo envies.</p>
+            </div>
+
+            <form action="">
+                <div class="form__container">
+
+                    <div class="form__group">
+                        <input type="number" id="voto" class="form__input" placeholder="EJ: 5.0" min="5" step="0.1" max="10"  pattern="^\d+(\.\d)?$" required>
+                        <label for="voto" class="form__label">Puntaje</label>
+                    </div>
+
+                    <div class="form__buttons">
+                        <input type="submit" value="Enviar" class="form__btn form__submit">
+                        <input type="reset" value="Reset" class="form__btn form__reset">
+                    </div>
+
+                    <div class="form__button">
+                        <input type="button" value="Descalificar" class="form__btn form__descalificar">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

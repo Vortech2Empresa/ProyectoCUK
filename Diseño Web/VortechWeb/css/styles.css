@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'normalize.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, 'sans-serif';
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    background-color: #1d2026;
+}
+
+/* a */
+
+nav ul li a {
+    /* TAG 'A' NAVIGATION BAR  */
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 0.125rem;
+    transition: background-size .3s;
+}
+
+li a.active,
+li a:hover {
+    transition: .5s;
+    color: #6C63FF;
+    background-size: 100% 0.125rem;
+}
+
+/* Responsive Menu */
+
+.enlace {
+    position: absolute;
+}
+
+label i {
+    color: #f1f1f1;
+}
+
+.check-btn {
+    font-size: 30px;
+    color: #f1f1f1;
+    float: right;
+    line-height: 5rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Imagen Header */
+
+header .header__image img {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Header Nav */
+
+header .header__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header .header__nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+header .header__nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    margin: 1.6rem;
+}
+
+/* Button */
+
+header .header__button a {
+    text-decoration: none;
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+}
+
+header .header__button a:hover {
+    color: #1d1d1d;
+    background-color: #f1f1f1;
+    transition: .5s all;
+}
+
+/* Section HERO */
+
+.hero {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero Imagen */
+
+.hero__image {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image img {
+    width: 90%;
+}
+
+/* Hero Texts */
+
+.hero__texts {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+    font-family: Montserrat, 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+.hero__title span {
+    color: #6C63FF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-family: Montserrat, 'sans-serif';
+}
+
+/* Text */
+
+.hero__paragraph {
+    font-family: Roboto, 'sans-serif';
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 70%;
+    color: gray;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__buttons a {
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #6C63FF;
+    border-radius: 5rem;
+    padding: 1rem 80%;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.hero__buttons a:hover {
+    background-color: #7e79d8;
+    transform: scale(1.01);
+    transition: all .5s;
+}
+
+/* CARDS CONTAINERS */
+
+.section-cards {
+    margin: 0;
+    padding: 0;
+    background-color: #6C63FF;
+    position: relative;
+    bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title SectionCard */
+
+.cards-sct__subtitle {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 3rem;
+    color: #181645;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    left: 1rem;
+}
+
+.cards-sct__title {
+    text-transform: uppercase;
+    font-family: Montserrat, 'sans-serif';
+    font-size: 4rem;
+    margin: 0 0 4rem 0;
+    letter-spacing: 0.3rem;
+    color: #dadada;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 90%;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* CARDS */
+
+.card {
+    min-height: 27rem;
+    max-height: 27rem;
+    width: 22rem;
+    max-width: 22rem;
+    background-color: #292662;
+    flex-basis: calc((100% - 4rem) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.card__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__image img {
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #292662;
+    box-shadow: 0 0px 5px #6C63FF;
+}
+
+/* Tilte & Text card */
+
+.card__texts {
+    position: relative;
+    bottom: 1rem;
+}
+
+.card__title {
+    font-size: 1.3rem;
+    font-family: Montserrat, 'sans-serif';
+}
+
+.card__paragraph {
+    padding: 0 3rem;
+    color: rgb(194, 194, 194);
+}
+
+/* Buttons Cards */
+
+.card__buttons {
+    display: flex;
+    margin: .5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__buttons a {
+    padding: 1rem 1.5rem;
+    border-radius: .3rem;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: Montserrat, 'sans-serif';
+    border: 1px solid #6C63FF;
+}
+
+.card__whatsapp {
+    background-color: #6C63FF;
+}
+
+/* WAVE END */
+
+.wave-end {
+    position: relative;
+    bottom: 2rem;
+}
+
+/* SECTION FORMULARIO */
+
+.formulario__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* IMAGEN DIVISION */
+
+.formulario__image {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario__image img {
+    width: 90%;
+}
+
+/* FORMULARIO DIVISION */
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 4.5rem 5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form_title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    color: #f1f1f1;
+}
+
+.form_container {
+    margin-top: 3rem;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.form_group {
+    position: relative;
+    --color: #f1f1f19a;
+}
+
+.form_input {
+    width: 100%;
+    background: none;
+    color: #f1f1f1;
+    padding: .5rem .3rem;
+    border: none;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    border-bottom: 1px solid var(--color);
+    font-size: 1rem;
+}
+
+.form_input+.form_label {
+    transform: translateY(-15px) scale(1);
+    transform-origin: left top;
+    color: var(--primary-light-color);
+}
+
+.form_label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form_btn:hover {
+    background-color: var(--primary-dark-color);
+}
+
+/*  TEXT AREA  */
+
+#textarea {
+    resize: none;
+    border: 1px solid var(--color);
+    border-radius: .2rem;
+}
+
+#textarea+.form_label {
+    transform: translateY(-17px);
+    transform-origin: left top;
+    color: var(--primary-light-color);
+    background-color: #1d2026;
+    padding: .1rem .5rem;
+}
+
+
+/* Tableta */
+
+@media (min-width: 501px) and (max-width: 998px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .check-btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(39, 39, 57);
+        top: 100px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: #f1f1f1;
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .check-btn {
+        font-size: 2rem;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    /* PRIMERA SECCION INTRODUCCION */
+
+    .hero {
+        position: relative;
+        bottom: 5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero__texts {
+        width: 70%;
+    }
+
+    .hero__paragraph {
+        width: 100%;
+        padding: 0;
+        margin: .5rem 0;
+    }
+
+
+    .card__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+
+
+    /* CARDS */
+
+    .card__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc((100% - 4rem) / 1);
+    }
+
+    /* FORMULARIOS */
+
+    .formulario__image {
+        display: none;
+    }
+}
+
+@media (min-width: 1500px) {
+
+
+    .hero__texts {
+        width: 50%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__title {
+        font-size: 5.5rem;
+        font-family: Montserrat, 'sans-serif';
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        margin-bottom: 2rem;
+        line-height: 3.2rem;
+    }
+
+    .hero__title span {
+        color: #6C63FF;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        font-family: Montserrat, 'sans-serif';
+    }
+
+    .hero__paragraph {
+        width: 70%;
+    }
+
+    .card__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc((100% - 4rem) / 1);
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .check-btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(39, 39, 57);
+        top: 100px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: #f1f1f1;
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .check-btn {
+        font-size: 2rem;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        position: relative;
+        bottom: 5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero__texts {
+        width: 100%;
+    }
+
+    .hero__paragraph {
+        width: 100%;
+        padding: 0;
+        margin: .5rem 0;
+    }
+
+
+    .card__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .hero__buttons a {
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    }
+
+    .hero__image img {
+        display: none;
+    }
+
+    /* CARDS SECTION */
+
+    .cards-sct__subtitle {
+        font-size: 1rem;
+        letter-spacing: 2rem;
+    }
+
+    .cards-sct__title {
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+    }
+
+    /* CARD */
+
+
+    .card__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        flex-basis: calc((100% - 4rem) / 1);
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .card__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .9rem;
+    }
+
+    /* Wave Div */
+
+    .wave-end {
+        position: relative;
+        bottom: .5rem;
+    }
+
+    /* Formulario */
+
+    .formulario__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_btn {
+        padding: .5rem 4rem;
+        margin: .3rem;
+    }
+}
