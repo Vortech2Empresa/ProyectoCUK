@@ -4,7 +4,6 @@
 
 ### Miembros
 
-Matias Moreira
 Sebastian Abreu
 Gianluca Pinotti
 Mathias Rodriguez
