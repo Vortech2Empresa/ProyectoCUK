@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/svg/FJlogoWhite.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="/dist/seis.css" />
+  <script defer src="/index-page/script.js"></script>
+  <title>Portfolio estudiante FJ</title>
+</head>
+
+<body class="rubik bg-100 w-full h-full">
+  <header class="">
+    <section class="bg-300 flex flex-row justify-between items-center px-12 p-4 mt-2 mx-4 rounded-lg">
+      <div class="flex justiy-center items-center">
+        <!--   ICONO     -->
+        <img class="w-8 h-8 transition hover:scale-105" src="/assets/svg/FJlogoBlack.svg"
+          alt="un svg de mi logo con mis iniciales" />
+      </div>
+
+      <article class="">
+        <!--   LISTA WEBS     -->
+        <ul class="flex flex-row justify-center items-center gap-4">
+
+          <a href="/index.html">
+            <li class="font-medium text-lg duration-700 transition rounded-lg p-2 hover:bg-cyan-600">Inicio</li>
+          </a>
+
+          <a href="/forms-page/seis.html">
+            <li class="hidden md:flex font-medium text-lg duration-700 transition rounded-lg p-2 hover:bg-cyan-600">Formularios</li>
+          </a>
+
+          <a href="/tablas/tablaSeis.html">
+            <li class="hidden md:flex font-medium text-lg duration-700 transition rounded-lg p-2 hover:bg-cyan-600">Tablas</li>
+          </a>
+
+          <a href="/desafio1/desafio1.html">
+            <li class="hidden md:flex font-medium text-lg duration-700 transition rounded-lg p-2 hover:bg-cyan-600">Desafío 1</li>
+          </a>
+
+        </ul>
+        </ul>
+      </article>
+
+      <div class="">
+        <!--  DISCLAIMER MENU    -->
+
+        <section class="relative w-full h-ful flex justify-center items-center flex-col">
+          <div class="rounded-100 cursor-pointer w-10">
+            <img id="btn__info-1" class="bg-cyan-600 rounded-100 w-10 transition duration-500 z-10"
+              src="/assets/svg/plus.svg" alt="" />
+          </div>
+
+          <div id="text__Info1" class="hidden absolute  top-1/2 right-1/2 bg-zinc-300 p-6 rounded-xl z-10">
+            <p class="mb-2">
+              Haga click
+              <a class="text-cyan-600 transition hover:font-semibold hover:text-green-700" target="_blank"
+                href="https://docs.google.com/document/d/16GywfPkY6XHyz8eTsfzdh4t-G92tBo7Tbq32l4RnUqc/edit?usp=drive_link">aquí</a>
+              para ver mis recomendaciones de páginas webs.
+            </p>
+            <p>
+              Haga click
+              <a class="text-cyan-600 transition hover:font-semibold hover:text-green-700" target="_blank"
+                href="https://portfolio.fabriciojordan.repl.co/">aquí</a>
+              para ver mi portafolio personal.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </header>
+
+
+
+  <main class="my-12 text-center flex flex-col justify-center items-center gap-8">
+
+    <section class="sec-form1 bg-beige border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de registro</h1>
+
+      <form class="block" action="" method="post"> 
+        <label for="name1">Nombre completo:</label> 
+        <input class="border border-black my-1" name="name1" type="text">
+        <br>
+        <label for="email1">Correo Electronico:</label>
+        <input class="border border-black my-1" name="name1" type="email">
+        <br></br> 
+        <label
+          for="msg1">Mensaje:</label>
+        <textarea class="border border-black my-1" name="msg1" id="" cols="20" rows="2"></textarea>
+        <br>
+        <button class="border border-black p-2 py-0 bg-slate-300">Enviar</button>
+      </form>
+
+    </section>
+
+    <section class="sec-form2 bg-stone-100 border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de registro 2</h1>
+
+      <form class="block" action="" method="post"> 
+        <label for="name2">Nombre:</label> 
+        <input class="border border-black my-1" name="name1" type="text"> 
+        <br>
+        <label for="apell2">Apellido:</label> 
+        <input class="border border-black my-1" name="apell2" type="text"> 
+        <br>
+        <label for="sex2">Sexo: </label>
+        <br>
+        <input class="border border-black my-1" name="men2" type="radio"> 
+        <label for="women2">Hombre</label> 
+        <input class="border border-black my-1" name="women2" type="radio"> 
+        <label for="women2">Mujer</label> 
+        <br>
+        <label for="email2">Correo Electronico:</label> 
+        <input class="border border-black my-1" name="email2" type="email">
+        <br>
+        <input class="border border-black my-1" name="info2" type="checkbox"> 
+        <label for="info2">Deseo recibir informacion sobre novedades y ofertas.</label>
+        <br>
+        <input class="border border-black my-1" name="decl2" type="checkbox"> 
+        <label for="decl2">Declaro haber leido y aceptar las condiciones del proveedor.</label> <br>
+          <button class="border border-black p-2 py-0 bg-slate-300">Enviar</button> 
+          <input class="border border-black p-2 py-0 bg-slate-300" type="reset"> 
+        </form>
+
+    </section>
+
+
+    <section class="sec-form3 bg-gray-400 border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de registro 3</h1>
+
+      <form action="" method="post">
+        <fieldset>
+          <legend>Datos Personales</legend> 
+          <label for="name3">Nombre Completo:</label> 
+          <input class="border border-black my-1" name="name3" type="text">
+          <br>
+          <label for="sex3">Sexo</label> 
+          <input name="men3" type="radio"> 
+          <label for="men3">Hombre</label> 
+          <input name="women3" type="radio"> 
+          <label for="women3">Mujer</label> 
+          <br>
+          <label for="dep3">Departamento:</label>
+          <select name="" id="">Ciudad 
+            <option value="">Montevideo</option>
+            <option value="">Rivera</option>
+            <option value="">Soriano</option>
+            <option value="">Flores</option>
+          </select>
+        </fieldset> 
+        <br>
+        <button class="border border-black p-2 py-0 bg-slate-300">Enviar</button> 
+        <input class="border border-black p-2 py-0 bg-slate-300 " type="reset">
+      </form>
+
+    </section>
+
+
+    <section class="sec-form bg-orange-300 border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de registro 4</h1>
+
+      <form action="" method="post">
+        <fieldset> 
+          <label for="name4">Nombre completo:</label> 
+          <input class="border border-black my-1" name="name4" type="text"> 
+          <br>
+          <label for="tel4">Teléfono:</label> 
+          <input class="border border-black my-1" name="tel4" type="tel"> 
+          <br>
+          <label for="email4">Correo Electronico:</label> 
+          <input class="border border-black my-1" name="email4" type="email"> 
+          <br>
+          <select name="count4" id="">Pais 
+            <option value="">Uruguay</option>
+            <option value="">Sri Lanka</option>
+            <option value="">Zeychelles</option>
+            <option value="">Brunei</option>
+          </select> 
+        </fieldset>
+
+        <fieldset>
+          <legend>Intereses</legend> 
+          <input name="deport4" type="checkbox"> 
+          <label for="deport4">Deportes</label>
+          <br><input name="music4" type="checkbox"> 
+          <label for="music4">Musica</label> 
+        </fieldset>
+      </form>
+
+    </section>
+
+
+    <section class="sec-form bg-slate-400 border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de registro 5</h1>
+
+      <form action="" method="post">
+        <fieldset> 
+        <label for="name5">Nombre completo:</label> 
+        <input class="border border-black my-1" name="name5" type="text"> 
+        <br>
+        <label for="apell5">Apellido:</label> 
+        <input class="border border-black my-1" name="apell5" type="text"> 
+        <br>
+        </fieldset>
+        <fieldset> 
+          <label for="sex5">Sexo: </label> 
+          <br>
+          <label for="men5">Hombre</label> 
+          <input name="men5" type="radio">
+          <label for="women5">Mujer</label> 
+          <input name="women5" type="radio"> 
+          <br>
+          <label for="email5">Correo Electronico:</label> 
+          <input class="border border-black my-1" name="email5" type="email"> 
+          <br>
+          <select name="" id="">Ciudad 
+            <option value="">Montevideo</option>
+            <option value="">Rivera</option>
+            <option value="">Soriano</option>
+            <option value="">Flores</option>
+          </select> 
+          <br>
+          <label for="desc5">Descripcion:</label> 
+          <textarea class="border border-black my-1" name="desc5" id="" cols="16" rows="1"></textarea> 
+        </fieldset>
+        <fieldset> 
+          <input name="info5" type="checkbox"> 
+          <label for="info5">Deseo recibir informacion sobre novedades y ofertas.</label> 
+          <br>
+          <input name="decl5" type="checkbox"> 
+          <label for="decl5">Declaro haber leido y aceptar las condiciones del proveedor.</label> 
+          <br>
+        </fieldset> 
+        <br>
+        <button class="border border-black p-2 py-0 bg-slate-300">Enviar</button>
+      </form>
+    </section>
+
+
+    <section class="sec-form6 bg-cadetblue border border-black p-4">
+      <h1 class="text-xl font-semibold">Formulario de varias cosas 6</h1>
+
+      <form action="" method="post">
+
+        <fieldset class="form6__fieldset-1">
+          <legend>Campos de Varios Tipos</legend>
+          <div> 
+            <label for="name61">Ingrese Nombre:</label> 
+            <input class="border border-black my-1" name="name61" type="text"> 
+          </div>
+          <div> 
+            <label for="num6">Ingrese Numero:</label>
+            <input class="border border-black my-1"t name="num6"" type=" text">
+            <br>
+            <label for="contr6">Ingrese Contraseña:</label>
+            <input class="border border-black my-1" name="contr6" type="text">
+            <br>
+            <label for="des6">Deslize:</label>
+            <input name="des6" type="range">
+            <br>
+            <label for="fecha6">Fech. Nac.</label>
+            <input class="border border-black my-1" name="fecha6" type="date">
+            <br>
+            <label for="tiempo6">Fech. Nac.2</label>
+            <input class="border border-black my-1" name="tiem6" type="time">
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos Personales</legend> 
+          <label for="name65">Nombre:</label> 
+          <input class="border border-black my-1" name="name65" type="text">
+          <br>
+          <label for="name66">Apellido:</label> 
+          <input class="border border-black my-1" name="name66" type="text">
+        </fieldset>
+
+        <fieldset>
+          <legend>Contacto</legend> 
+          <label for="tel6">Telefono:</label> 
+          <input class="border border-black my-1" name="tel6" type="text">
+        </fieldset>
+
+        <fieldset>
+          <legend>Indique el sexo</legend> 
+          <label for="masc6">Masculino</label> 
+          <input name="masc6" type="radio">
+          <br>
+          <label for="fem6">Femenino</label> 
+          <input name="fem6" type="radio">
+        </fieldset>
+
+        <fieldset class="form6__fieldset-5">
+          <legend>Seleccione sus intereses</legend> 
+          <input type="checkbox" name="libro1">
+          <br>  
+            <label for="lib1">Libros</label>
+            <br>
+            <input type="checkbox" name="peli1">
+            <br> 
+            <label for="pel1">Peliculas</label>
+            <br>
+            <input type="checkbox" name="musi6">
+            <br> 
+            <label for="mus1">Musica</label>
+        </fieldset> 
+        <br>
+        <button class="border border-black p-2 py-0 bg-slate-300">Enviar</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+
+  <footer class="pb-4">
+    <section id="footer__Art"
+      class="text-white flex flex-row justify-center items-center px-12 p-4 mt-2 mx-4 rounded-lg gap-8">
+      <div class="flex justiy-center items-center">
+        <!--   ICONO     -->
+        <img class="w-8 h-8 transition invert hover:scale-105" src="/assets/svg/FJlogoBlack.svg"
+          alt="un svg de mi logo con mis iniciales" />
+      </div>
+
+      <article class="flex flex-row gap-4 justify-center items-center ">
+        <p>Creado por: </p>
+        <a href="https://portfolio.fabriciojordan.repl.co/" class="name">Fabricio Jordán</a>
+        <p>- 2023 -</p>
+      </article>
+
+
+    </section>
+  </footer>
+
+</body>
+
+</html>
